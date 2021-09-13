@@ -1,4 +1,4 @@
----
+<!---
 layout: default
 ---
 
@@ -20,4 +20,30 @@ layout: default
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+</div> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <title>AnimeJS Animation</title>
+  </head>
+  <body>
+    <div style="background-color: purple; height: 100px; width: 100px"></div>
+    <script>
+      anime({
+        targets: "div",
+        translateX: 600,
+        translateY: 600,
+        rotate: [180, -180],
+        borderRadius: 150,
+        duration: 3000,
+        easing: "easeInOutSine",
+        direction: "alternate",
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
